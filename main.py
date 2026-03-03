@@ -9,7 +9,7 @@ st.markdown(
     """
     <style>
     .stApp {
-        background: #0f172a;
+        background-color: #0f172a;
     }
 
     .stApp::before {
@@ -17,19 +17,22 @@ st.markdown(
         position: fixed;
         top: 0;
         left: 0;
-        width: 100%;
-        height: 100%;
+        width: 100vw;
+        height: 100vh;
         background-image: url("https://i.postimg.cc/VNHGhCyG/Chat-GPT-Image-2-mar-2026-10-36-51-p-m.png");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
-        opacity: 0.9;
-        z-index: -1;
+        z-index: 0;
+    }
+
+    .main {
+        position: relative;
+        z-index: 1;
     }
     </style>
     """,
     unsafe_allow_html=True
-
 )
 # --- 1. BASE DE DATOS DE PRUEBA (El "Pool" de 10 preguntas) ---
 # Instrucción para el alumno: "Aquí es donde añades tus preguntas de TDA"
