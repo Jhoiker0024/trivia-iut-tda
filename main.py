@@ -8,7 +8,7 @@ st.set_page_config(page_title="Aprendiendo de Telecomunicaciones", page_icon="�
 # --- 1. BASE DE DATOS DE PRUEBA (El "Pool" de 10 preguntas) ---
 # Instrucción para el alumno: "Aquí es donde añades tus preguntas de TDA"
 if 'pool_preguntas' not in st.session_state:
-    st.session_state.pool_preguntas = st.session_state.pool_preguntas = 
+    st.session_state.pool_preguntas = 
     [
     {"p": "¿Qué significa la sigla RF en telecomunicaciones?",
      "o": ["Radio Frecuencia", "Red Física", "Rango Final", "Registro de Fibra"],
