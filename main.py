@@ -124,7 +124,6 @@ if not st.session_state.juego_terminado:
     # Obtenemos la pregunta actual del pool
     pregunta_actual = st.session_state.pool_preguntas[st.session_state.indice]
     
-    st.subheader(f"Pregunta {st.session_state.indice + 1}:")
     st.write(f"### {pregunta_actual['p']}")
     
     # Creamos los botones para las opciones
