@@ -18,7 +18,7 @@ st.markdown(
     </style>
     """,
     unsafe_allow_html=True
-)
+
 )
 # --- 1. BASE DE DATOS DE PRUEBA (El "Pool" de 10 preguntas) ---
 # Instrucción para el alumno: "Aquí es donde añades tus preguntas de TDA"
