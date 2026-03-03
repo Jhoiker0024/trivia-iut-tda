@@ -15,11 +15,11 @@ st.markdown(
         background-repeat: no-repeat;
         background-position: center 10px;
         background-color: #0f172a;
-        font-family: "Courier New", Courier, monospace;
+        font-family: "Times New Roman", Times, serif;
     }
 
     h1, h2, h3, h4, h5, h6, p, div {
-        font-family: "Courier New", Courier, monospace !important;
+        font-family: "Times New Roman", Times, serif; !important;
     }
     </style>
     """,
