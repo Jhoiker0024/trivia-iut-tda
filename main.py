@@ -86,7 +86,15 @@ def reproducir_sonido(url):
 
 # --- 4. INTERFAZ VISUAL ---
 
-st.title("📡Aprendiendo de Telecomunicaciones📡")
+st.markdown(
+    """
+    <h1 style='text-align: center; 
+               font-family: "Courier New", Courier, monospace;
+               font-size: 48px;'>
+        📡 Aprendiendo Telecomunicaciones
+    </h1>
+    """,
+    unsafe_allow_html=True
 st.divider()
 
 if not st.session_state.juego_terminado:
