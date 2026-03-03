@@ -90,6 +90,8 @@ if 'pool_preguntas' not in st.session_state:
     # Mezclamos el pool para que no siempre salgan igual
     random.shuffle(st.session_state.pool_preguntas)
 
+TOTAL_PREGUNTAS = len(st.session_state.pool_preguntas)
+
 # --- 2. GESTIÓN DEL ESTADO DEL JUEGO ---
 # Usamos session_state para que la App "recuerde" en qué pregunta vamos
 if 'indice' not in st.session_state:
@@ -98,7 +100,7 @@ if 'indice' not in st.session_state:
     st.session_state.juego_terminado = False
 
 # --- 3. FUNCIONES DE AUDIO ---
-# Nota para el alumno: Streamlit puede reproducir audio desde una URL
+# Nota : Streamlit puede reproducir audio desde una URL
 def reproducir_sonido(url):
     st.markdown(f'<audio src="{url}" autoplay style="display:none"></audio>', unsafe_allow_html=True)
 
@@ -117,7 +119,7 @@ st.divider()
 
 if not st.session_state.juego_terminado:
     # Barra de progreso (5 preguntas por ronda)
-    progreso = (st.session_state.indice) / 5
+    progreso = (st.session_state.indice + 1) / TOTAL_PREGUNTAS
     st.progress(progreso)
     # Obtenemos la pregunta actual del pool
     pregunta_actual = st.session_state.pool_preguntas[st.session_state.indice]
@@ -159,7 +161,7 @@ if not st.session_state.juego_terminado:
             time.sleep(1)
 
         # Avanzamos a la siguiente pregunta
-        if st.session_state.indice < 4: # Solo jugamos 5 preguntas por ronda
+       if st.session_state.indice < TOTAL_PREGUNTAS - 1: # Jugamos todas  las preguntas por ronda
             st.session_state.indice += 1
             st.rerun()
         else:
@@ -169,9 +171,10 @@ if not st.session_state.juego_terminado:
 else:
     # PANTALLA FINAL
     st.header("🏁 ¡El juego ha terminado!")
-    st.metric("PUNTUACIÓN FINAL", f"{st.session_state.puntos} / 10")
+    max_puntos = TOTAL_PREGUNTAS * 2
+    st.metric("PUNTUACIÓN FINAL", f"{st.session_state.puntos} / {max_puntos}")
     
-    porcentaje = (st.session_state.puntos / 10) * 100
+    porcentaje = (st.session_state.puntos / max_puntos) * 100
     st.metric("PORCENTAJE OBTENIDO", f"{porcentaje}%")
     
     if porcentaje >= 80:
