@@ -5,7 +5,6 @@ import time
 # --- CONFIGURACIÓN DE LA PÁGINA ---
 st.set_page_config(page_title="Aprendiendo Telecomunicaciones", page_icon="📡")
 # --- COLOCA IMAGEN DE FONDO ---
-# --- COLOCA IMAGEN DE FONDO ---
 st.markdown(
     """
     <style>
@@ -85,13 +84,11 @@ def reproducir_sonido(url):
     st.markdown(f'<audio src="{url}" autoplay style="display:none"></audio>', unsafe_allow_html=True)
 
 # --- 4. INTERFAZ VISUAL ---
-st.markdown("<br>", unsafe_allow_html=True)
 st.markdown(
     """
     <h1 style='text-align: center; 
                font-family: "Courier New", Courier, monospace;
-               font-size: 48px;'>
-              
+               font-size: 48px;'>         
         Aprendiendo Telecomunicaciones📡
     </h1>
     """,
