@@ -10,10 +10,10 @@ st.markdown(
     <style>
     .stApp {
         background-image: url("https://i.postimg.cc/52mKJrvV/Chat-GPT-Image-2-mar-2026-11-43-11-p-m.png");
-        background-size: 90%;
-        background-repeat: no-repeat;
-        background-position: center 10px;
-        background-color: #0f172a;
+        # background-size: 90%;
+        # background-repeat: no-repeat;
+        # background-position: center 10px; 
+        # background-color: #0f172a;
         font-family: "Times New Roman", Times, serif;
     }
 
