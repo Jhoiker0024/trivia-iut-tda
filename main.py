@@ -8,9 +8,7 @@ st.set_page_config(page_title="Aprendiendo de Telecomunicaciones", page_icon="ðŸ
 st.markdown(
     """
     <style>
-    .stApp {
-        background: #0f172a;
-    }
+   
 
     .stApp::before {
         content: "";
