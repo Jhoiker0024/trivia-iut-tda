@@ -9,11 +9,22 @@ st.markdown(
     """
     <style>
     .stApp {
-        background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        background: #0f172a;
+    }
+
+    .stApp::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
         url("https://i.postimg.cc/VNHGhCyG/Chat-GPT-Image-2-mar-2026-10-36-51-p-m.png");
+        background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
-        background-color: #0f172a;  /* Fondo azul oscuro moderno */
+        opacity: 0.9;
+        z-index: -1;
     }
     </style>
     """,
