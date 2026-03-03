@@ -85,6 +85,7 @@ def reproducir_sonido(url):
     st.markdown(f'<audio src="{url}" autoplay style="display:none"></audio>', unsafe_allow_html=True)
 
 # --- 4. INTERFAZ VISUAL ---
+st.title("")
 st.title("📡Aprendiendo de Telecomunicaciones📡")
 st.divider()
 
