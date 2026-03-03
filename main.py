@@ -13,7 +13,7 @@ st.markdown(
         # background-size: 90%;
         # background-repeat: no-repeat;
         # background-position: center 10px; 
-        # background-color: #0f172a;
+        background-color: #0f172a;
         font-family: "Times New Roman", Times, serif;
     }
 
@@ -64,7 +64,7 @@ if 'pool_preguntas' not in st.session_state:
      "o": ["FTP", "HTTP", "SMTP", "SSH"],
      "c": "HTTP"},
 
-    {"p": "¿Qué magnitud mide la potencia de una señal?",
+    {"p": "¿Qué unidad de medida representa la potencia de una señal?",
      "o": ["dBm", "Segundos", "Bits", "Metros"],
      "c": "dBm"}
 ]
