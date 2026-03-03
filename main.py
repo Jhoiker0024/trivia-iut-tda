@@ -8,7 +8,9 @@ st.set_page_config(page_title="Aprendiendo de Telecomunicaciones", page_icon="ðŸ
 st.markdown(
     """
     <style>
-   
+    .stApp {
+        background: #0f172a;
+    }
 
     .stApp::before {
         content: "";
@@ -17,7 +19,7 @@ st.markdown(
         left: 0;
         width: 100%;
         height: 100%;
-        url("https://i.postimg.cc/VNHGhCyG/Chat-GPT-Image-2-mar-2026-10-36-51-p-m.png");
+        background-image: url("https://i.postimg.cc/VNHGhCyG/Chat-GPT-Image-2-mar-2026-10-36-51-p-m.png");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
