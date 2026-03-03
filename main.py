@@ -120,6 +120,7 @@ else:
     # PANTALLA FINAL
     st.header("🏁 ¡El juego ha terminado!")
     st.metric("PUNTUACIÓN FINAL", f"{st.session_state.puntos} / 10")
+    
     porcentaje = (st.session_state.puntos / 10) * 100
     st.metric("PORCENTAJE OBTENIDO", f"{porcentaje}%")
     
